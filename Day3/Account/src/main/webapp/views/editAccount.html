@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Edit Account</h2>
+    <form method="post">
+        <input type="text" class="form-control" id="id" name="id" th:value="${account.id}" hidden="hidden">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" name="username" th:value="${account.username}">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="text" class="form-control" id="password" name="password" th:value="${account.password}">
+        </div>
+        <div class="form-group">
+            <label for="img">Image:</label>
+            <input type="text" class="form-control" id="img" name="img" th:value="${account.img}">
+        </div>
+        <div class="form-group">
+            <label for="birthday">Birthday:</label>
+            <input type="text" class="form-control" id="birthday" name="birthday" th:value="${account.birthday}">
+        </div>
+        <button type="submit" class="btn btn-default">Edit</button>
+    </form>
+</div>
+
+</body>
+</html>

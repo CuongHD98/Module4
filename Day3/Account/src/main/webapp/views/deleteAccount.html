@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head"></head>
+<body>
+<div class="container">
+    <h2>Delete Account</h2>
+    <form method="post">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Image</th>
+                <th>Birthday</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td th:text="${account.id}"></td>
+                <td th:text="${account.username}"></td>
+                <td th:text="${account.password}"></td>
+                <td><img th:src="${account.img}" width="150px" height="150px"></td>
+                <td th:text="${account.birthday}"></td>
+            </tr>
+            </tbody>
+        </table>
+        <input type="submit" value="Delete Account">
+    </form>
+</div>
+
+</body>
+</html>

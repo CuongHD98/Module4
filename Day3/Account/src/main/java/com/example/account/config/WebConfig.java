@@ -72,7 +72,7 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/**")
-                .addResourceLocations("file:/C:\\Users\\HDC\\Desktop\\Module4\\Day3\\ID8915\\src\\main\\webapp/");
+                .addResourceLocations("file:C:\\Users\\HDC\\Desktop\\Module4\\Day3\\Account\\src\\main\\webapp/");
 
     }
 }

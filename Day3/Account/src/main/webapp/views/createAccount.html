@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="/layout :: head"></head>
+<head>
+    <title>Create</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
 <body>
 <div class="container">
     <h2>Create Account</h2>
-    <form method="post">
-        <div class="form-group">
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group" >
             <label for="id">ID:</label>
             <input type="text" class="form-control" id="id" name="id" placeholder="Enter ID">
         </div>
@@ -18,8 +25,8 @@
             <input type="text" class="form-control" id="password" name="password" placeholder="Enter Password">
         </div>
         <div class="form-group">
-            <label for="img">Image-Link:</label>
-            <input type="text" class="form-control" id="img" name="img" placeholder="Enter Image-link">
+            <label for="imgFile">Image:</label>
+            <input type="file" id="imgFile" name="imgFile" placeholder="Enter Image">
         </div>
         <div class="form-group">
             <label for="birthday">Birthday:</label>

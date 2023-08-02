@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b062e7d5-d79f-4402-bdf4-ad1f82182c89" name="Changes" comment="" />
+    <list default="true" id="b062e7d5-d79f-4402-bdf4-ad1f82182c89" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../BTVN/ShopShoe/src/main/java/com/example/shopshoe/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day3/Account/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day4/ID8924/src/main/java/com/example/id8924/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day4/ID8924/src/main/java/com/example/id8924/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day4/ID8924/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day4/ID8924/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day4/ID8924/src/main/webapp/views/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Day4/ID8924/src/main/webapp/views/info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ThiEndModule/Test/src/main/java/com/example/test/config/ApplicationInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ThiEndModule/Test/src/main/java/com/example/test/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ThiEndModule/Test/src/main/java/com/example/test/controller/CityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ThiEndModule/Test/src/main/java/com/example/test/model/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ThiEndModule/Test/src/main/java/com/example/test/service/CityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ThiEndModule/Test/src/main/webapp/views/createCity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ThiEndModule/Test/src/main/webapp/views/deleteCity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ThiEndModule/Test/src/main/webapp/views/editCity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ThiEndModule/Test/src/main/webapp/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ThiEndModule/Test/src/main/webapp/views/showCity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ThiEndModule/Test/src/main/webapp/views/viewCity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ID8891" beforeDir="false" afterPath="$PROJECT_DIR$/../ID8891" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day3/Account/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day3/Account/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day3/Account/src/main/java/com/example/account/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day3/Account/src/main/java/com/example/account/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day3/Account/src/main/java/com/example/account/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day3/Account/src/main/java/com/example/account/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day3/Account/src/main/webapp/views/createAccount.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day3/Account/src/main/webapp/views/createAccount.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day3/Account/src/main/webapp/views/editAccount.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day3/Account/src/main/webapp/views/editAccount.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day3/ID8915/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day3/ID8915/.idea/gradle.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +51,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -40,10 +71,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/HDC/Desktop/Module4/Day2/ID8892",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "7725630ce05756f3f3ad444cc9dcb393",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -145,6 +179,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688981018501</updated>
       <workItem from="1688981019839" duration="3373000" />
+      <workItem from="1689505298989" duration="110000" />
     </task>
     <servers />
   </component>

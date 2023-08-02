@@ -1,0 +1,36 @@
+.quantity-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.quantity-controls button {
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    border: none;
+}
+
+.quantity-controls input {
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+}
+
+.table tr th, td {
+    text-align: center;
+}
+
+.btn-cart {
+    margin-bottom: 10px;
+}
+.btn-cart button{
+    width: 115px;
+
+}

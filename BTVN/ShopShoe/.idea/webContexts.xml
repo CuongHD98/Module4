@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/admin/admin.html" value="file://$PROJECT_DIR$/src/main/webapp/views/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/adminView/account.html" value="file://$PROJECT_DIR$/src/main/webapp/views/adminView" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/adminView/accountCreate.html" value="file://$PROJECT_DIR$/src/main/webapp/views/adminView" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/adminView/accountEdit.html" value="file://$PROJECT_DIR$/src/main/webapp/views/adminView" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/adminView/crudAccount.html" value="file://$PROJECT_DIR$/src/main/webapp/views/adminView" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/adminView/layout.html" value="file://$PROJECT_DIR$/src/main/webapp/views/adminView" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/adminView/productCreate.html" value="file://$PROJECT_DIR$/src/main/webapp/views/adminView" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/views/homeView/productDetail.html" value="file://$PROJECT_DIR$/src/main/webapp/views/homeView" />
+      </map>
+    </option>
+  </component>
+</project>

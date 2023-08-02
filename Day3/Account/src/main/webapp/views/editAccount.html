@@ -11,7 +11,7 @@
 <body>
 <div class="container">
     <h2>Edit Account</h2>
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
         <input type="text" class="form-control" id="id" name="id" th:value="${account.id}" hidden="hidden">
         <div class="form-group">
             <label for="username">Username:</label>
@@ -21,9 +21,10 @@
             <label for="password">Password:</label>
             <input type="text" class="form-control" id="password" name="password" th:value="${account.password}">
         </div>
+        <input type="hidden" class="form-control" id="img" name="img" th:value="${account.img}" hidden="hidden">
         <div class="form-group">
-            <label for="img">Image:</label>
-            <input type="text" class="form-control" id="img" name="img" th:value="${account.img}">
+            <label for="imgFile">Image:</label>
+            <input type="file"  id="imgFile" name="imgFile">
         </div>
         <div class="form-group">
             <label for="birthday">Birthday:</label>

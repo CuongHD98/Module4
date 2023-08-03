@@ -18,6 +18,7 @@ public class Account {
     private String username;
     @Column(nullable = false)
     private String password;
+    private String name;
     private String avatar;
     private String coverPhoto;
     private String  aboutMe;

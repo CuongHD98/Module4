@@ -1,5 +1,6 @@
 package com.casemodule.model.dto;
 
+import com.casemodule.model.Account;
 import com.casemodule.model.Role;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,9 +12,6 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AccountToken {
-    private int id;
-    private String username;
-    private String password;
-    private Role role;
+    private Account account;
     private String token;
 }

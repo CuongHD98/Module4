@@ -36,7 +36,6 @@ public class LoginAPI {
         account = accountService.getAccountLogin(account.getUsername(), account.getPassword());
         String token;
         token = jwtService.createToken(authentication);
-        return new AccountToken(account.getId(), account.getUsername(), account.getPassword(),
-                account.getRole(), token);
+        return new AccountToken(account, token);
     }
 }

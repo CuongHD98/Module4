@@ -13,6 +13,7 @@ import java.sql.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name = "`Like`")
 public class Like {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

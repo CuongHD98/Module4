@@ -7,6 +7,8 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -22,5 +24,5 @@ public class Message {
     @ManyToOne
     private Account receiver;
     private String content;
-    private Date createAt;
+    private Timestamp createAt;
 }

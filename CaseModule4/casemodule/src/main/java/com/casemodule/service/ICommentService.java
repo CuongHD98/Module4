@@ -1,6 +1,8 @@
 package com.casemodule.service;
 
 import com.casemodule.model.Comment;
+import com.casemodule.model.Post;
+import com.casemodule.model.dto.CommentWithPost;
 
 import java.util.List;
 
@@ -10,4 +12,5 @@ public interface ICommentService {
     void edit(Comment comment);
     void delete(int id);
     Comment findById(int id);
+    List<CommentWithPost> getAllCommentWithPost(int idAccount);
 }

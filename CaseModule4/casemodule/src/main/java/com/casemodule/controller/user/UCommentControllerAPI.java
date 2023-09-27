@@ -3,6 +3,7 @@ package com.casemodule.controller.user;
 import com.casemodule.model.Account;
 import com.casemodule.model.Comment;
 import com.casemodule.model.Post;
+import com.casemodule.model.dto.CommentWithPost;
 import com.casemodule.service.IAccountService;
 import com.casemodule.service.ICommentService;
 import com.casemodule.service.IPostService;
@@ -28,7 +29,7 @@ public class UCommentControllerAPI {
     public ResponseEntity<List<Comment>> getAllCommentByPostId(@PathVariable int idPost) {
         return new ResponseEntity<>(commentService.getAllCommentByPostId(idPost), HttpStatus.OK);
     }
-    @PostMapping("/comments/{idPost}")
+    @PostMapping("/{idPost}")
     public ResponseEntity<Comment> createComment(@PathVariable int idAccount, @PathVariable int idPost,
                                                  @RequestBody Comment comment) {
         Account account = accountService.findById(idAccount);
@@ -52,6 +53,10 @@ public class UCommentControllerAPI {
         comment.setId(idComment);
         commentService.edit(comment);
         return new ResponseEntity<>(comment, HttpStatus.OK);
+    }
+    @GetMapping("/commentWithPosts")
+    public ResponseEntity<List<CommentWithPost>> getAllCommentWithPost(@PathVariable int idAccount) {
+        return new ResponseEntity<>(commentService.getAllCommentWithPost(idAccount), HttpStatus.OK);
     }
 
 

@@ -6,6 +6,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface IAccountRepo extends JpaRepository<Account, Integer> {
     @Query(nativeQuery = true, value = "SELECT * FROM Account where username= :username and password= :password")
@@ -15,4 +17,5 @@ public interface IAccountRepo extends JpaRepository<Account, Integer> {
     Account getAccountLoginHQL(@Param("username") String username,@Param("password") String password);
 
     Account getAccountByUsername(String username);
+
 }

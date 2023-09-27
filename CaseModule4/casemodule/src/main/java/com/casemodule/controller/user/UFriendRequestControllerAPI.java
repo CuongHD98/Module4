@@ -1,8 +1,6 @@
 package com.casemodule.controller.user;
 
-import com.casemodule.model.FriendRequest;
-import com.casemodule.model.Friendship;
-import com.casemodule.model.Post;
+import com.casemodule.model.*;
 import com.casemodule.service.IAccountService;
 import com.casemodule.service.IFriendRequestService;
 import com.casemodule.service.IFriendshipService;
@@ -21,6 +19,8 @@ public class UFriendRequestControllerAPI {
     private IFriendRequestService friendRequestService;
     @Autowired
     private IFriendshipService friendshipService;
+    @Autowired
+    private IAccountService accountService;
     @GetMapping("/friendRequests")
     public ResponseEntity<List<FriendRequest>> getAllFriendRequestByAccountId(@PathVariable int idAccount) {
         return new ResponseEntity<>(friendRequestService.getAllFriendRequestByAccountId(idAccount), HttpStatus.OK);
@@ -30,14 +30,28 @@ public class UFriendRequestControllerAPI {
                                                                  @PathVariable int action) {
         FriendRequest friendRequest = friendRequestService.findById(idFriendRequest);
         if (action == 1) {
-            Friendship friendship = new Friendship();
-            friendship.setUser(friendRequest.getReceiver());
-            friendship.setFriend(friendRequest.getSender());
-            friendshipService.createFriendship(friendship);
+            Friendship friendshipMe = new Friendship();
+            friendshipMe.setUser(friendRequest.getReceiver());
+            friendshipMe.setFriend(friendRequest.getSender());
+            friendshipService.createFriendship(friendshipMe);   
+            Friendship friendshipYou = new Friendship();
+            friendshipYou.setUser(friendRequest.getSender());
+            friendshipYou.setFriend(friendRequest.getReceiver());
+            friendshipService.createFriendship(friendshipYou);
             friendRequestService.deleteFriendRequest(idFriendRequest);
         } else {
             friendRequestService.deleteFriendRequest(idFriendRequest);
         }
+        return new ResponseEntity<>(friendRequest, HttpStatus.OK);
+    }
+    @GetMapping("/friendRequests/{idSender}")
+    public ResponseEntity<FriendRequest> createFriendRequest(@PathVariable int idAccount, @PathVariable int idSender) {
+        Account sender = accountService.findById(idSender);
+        Account receiver = accountService.findById(idAccount);
+        FriendRequest friendRequest = new FriendRequest();
+        friendRequest.setReceiver(receiver);
+        friendRequest.setSender(sender);
+        friendRequestService.createFriendRequest(friendRequest);
         return new ResponseEntity<>(friendRequest, HttpStatus.OK);
     }
 

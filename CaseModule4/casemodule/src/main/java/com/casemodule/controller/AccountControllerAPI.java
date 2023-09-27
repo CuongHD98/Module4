@@ -26,7 +26,7 @@ public class AccountControllerAPI {
         return account;
     }
 
-    @GetMapping
+    @GetMapping("/allAccount")
     public List<Account> getAll(){
         return accountService.getAll();
     }

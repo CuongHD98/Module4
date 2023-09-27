@@ -34,7 +34,7 @@ public class FriendRequestServiceImpl implements IFriendRequestService {
 
     @Override
     public void createFriendRequest(FriendRequest friendRequest) {
-
+        iFriendRequestRepo.save(friendRequest);
     }
 
     @Override
